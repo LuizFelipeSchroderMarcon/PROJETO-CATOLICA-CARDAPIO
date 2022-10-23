@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CardTable</title>
+    <link rel="stylesheet" href="./css/tablecard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- PRODUTO 01 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche01.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Cheeseburger</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão com gergelim, hambúrguer, queijo derretido, picles, ketchup
+                e mostarda.<br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 12,75</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <!-- <div class="sacola">
+                  <span class="menos1">-</span>
+                  <span class="sacola1" onblur="calculoPedido()">00</span> 
+                  <span class="mais1">+</span> -->
+                  <input
+                    type="number"
+                    id="n1"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 02 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche02.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Cheeseburger Bacon</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão, hambúrguer, lascas de bacon, tomate, cheddar e cebola
+                caramelizada.
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 22,25</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n2"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PODUTO 03 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche03.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Cheeseburger Duplo</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão com gergelim, dois hambúrgueres, duas fatias de queijo,
+                picles, alface, tomate, cebola, maionese e ketchup.
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 22,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n3"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 04 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche01.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Cheeseburger Egg</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão de brioche, hambúrguer, ovo, cebola, queijo e bacon.
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 19,75</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n4"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 05 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche05.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Burger Frango</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão, hambúrguer de frango com tempero especial, alface, tomate e
+                molho saucee.
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 17,75</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n5"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 06 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche06.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Chesseburger Salada</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão de brioche, hambúrguer, ovo, cebola, queijo e bacon.
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 14,75</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n6"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 07 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche07.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Misto Quente</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão macio e quentinho, queijo derretido e presunto.
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 8,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n7"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 08 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche08.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Cachorro Quente</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão, duas salsichas, molho de tomate, vinagrete e batata palha.
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 17,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n8"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 09 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche09.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Dog de Frango</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão, duas salsichas, tomate, <br />frango desfiado, maionese,<br />
+                ketchup e mostarda.
+                <br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 20,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n9"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 10 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche10.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Dog de Bacon</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Pão, salsicha, muito bacon, <br />molho de tomate, maionese,
+                <br />ketchup e mostarda.
+                <br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 23,50</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n10"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 11 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche11.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Batata Frita Pequena</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Porção de batata frita <br />premium em palito, 300gr.
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 18,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n11"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 12 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche12.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Batata Frita Média</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Porção de batata frita <br />premium em palito, 500gr.
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 28,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n12"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 13 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche13.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Batata Frita Grande</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Porção de batata frita <br />premium em palito, 800gr.
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 32,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n13"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 14 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche14.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Frango a Passarinho</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Porção com 12 unidades.<br />Só para a Vanessa. <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 23,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n14"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 15 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche15.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Mista do Batatão</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Filé migon, picanha, calabresa, frango a passarinho, fritas,
+                polenta e mandioca. 2.250gr
+                <br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 100,00</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n15"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 16 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche16.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Alcatra com Fritas</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                Porção de alcatra, molho da casa, cebola gratinada e bata frita.
+                1250gr
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 75,25</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n16"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 17 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche17.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Coca Cola Lata</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                350ml
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 5,25</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n17"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 18 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche18.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Guaraná Lata</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                350ml
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 5,25</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n18"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 19 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche19.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Heineken Lata</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                250ml
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 6,75</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n19"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- PRODUTO 20 -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="imagem">
+                <img id="img" src="./imagens/lanche20.png" />
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <tr>
+              <td id="titulo">Eisenbahn</td>
+            </tr>
+
+            <!-- DESCRIÇÃO -->
+
+            <tr>
+              <td id="desc">
+                350ml
+                <br /><br />
+              </td>
+            </tr>
+
+            <!-- PREÇO -->
+
+            <tr id="preco">
+              <td id="valor">R$ 6,75</td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr>
+              <td>
+                <div class="sacola">
+                  <input
+                    type="number"
+                    id="n20"
+                    value="0"
+                    onblur="calculoPedido()"
+                  />
+                </div>
+              </td>
+            </tr>
+            <!-- FIM -->
+
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- PAGAMENTO -->
+
+      <div class="bloco">
+        <table class="produto">
+          <tbody>
+            <!-- IMAGEM -->
+
+            <tr>
+              <td id="forma_pagamento">
+                <p id="titulo">Seleciona a Forma de pagamento:</p>
+                 <form>
+                
+                  <p><br/>
+                  <input type="radio" id="r1" name="rr" />
+                  <label for="r1"><span></span>Débito</label>
+                  
+                  <br><br><input type="radio" id="r2" name="rr" />
+                  <label for="r2"><span></span>Crédito</label>
+                  
+                  <br><br><input type="radio" id="r3" name="rr" />
+                    <label for="r3"><span></span>Dinheiro</label>
+                  
+                  <br><br></nr>  <input id="troco" type="number" placeholder="Troco pra quanto?">
+                  </p>
+                    
+                  </form>
+              </td>
+            </tr>
+
+            <!-- TÍTULO -->
+
+            <!-- <tr>
+              <td id="titulo">Endereço</td>              
+            </tr> -->
+
+            <!-- DESCRIÇÃO -->
+
+            <!-- <tr>
+              <td id="desc">                             
+                <br /><br />
+              </td>
+            </tr> -->
+
+            <!-- PREÇO -->
+
+            <tr>
+              <td id="result"></td>
+            </tr>
+
+            <!-- ADICIONAR OU REMOVER -->
+
+            <tr> 
+             <td id="titulo">  <a id="link" href="https://wa.me/47999124255?text=Fiz%20um%20pedido%20e%20gostaria%20de%20saber%20sobre%20o%20status%20dele">Confirme seu Pedido</a></td>
+            </tr>
+            <!-- FIM -->
+
+          </tbody>
+        </table>
+      </div>
+       
+        
+        <!-- <table  width="100%" border="2px">
+          <tr>
+            <td width="50%">Total a Pagar</td>
+            <td><div id="result"></div></td>
+          </tr>
+
+          
+      
+
+            <tr>
+              <td colspan="2" >                 
+                <p>Forma de pagamento:</p>
+                <form>
+                  <INPUT TYPE="radio" NAME="OPCAO" VALUE="op1"> Débito
+                    
+                  <INPUT TYPE="radio" NAME="OPCAO" VALUE="op2"> Crédito
+                    
+                  <INPUT TYPE="radio" NAME="OPCAO" VALUE="op3"> Dinheiro
+                    
+                  </form>               
+              
+             </td></tr>
+        </table> -->
+        
+
+
+    </div>
+    </div>
+
+    <br />
+    <br />
+
+    <!-- Resultado:<div id="result"> </div><br><br>
+    <br><br><br>Descrição: <div id="compra"></div> -->
+
+    <script>
+      function calculoPedido() {
+        var soma;
+        var n1 = parseFloat(document.getElementById("n1").value);
+        var n2 = parseFloat(document.getElementById('n2').value);
+        var n3 = parseFloat(document.getElementById('n3').value);
+        var n4 = parseFloat(document.getElementById('n4').value);
+        var n5 = parseFloat(document.getElementById("n5").value);
+        var n6 = parseFloat(document.getElementById('n6').value);
+        var n7 = parseFloat(document.getElementById('n7').value);
+        var n8 = parseFloat(document.getElementById('n8').value);
+        var n9 = parseFloat(document.getElementById("n9").value);
+        var n10 = parseFloat(document.getElementById('n10').value);
+        var n11 = parseFloat(document.getElementById('n11').value);
+        var n12 = parseFloat(document.getElementById('n12').value);
+        var n13 = parseFloat(document.getElementById("n13").value);
+        var n14 = parseFloat(document.getElementById('n14').value);
+        var n15 = parseFloat(document.getElementById('n15').value);
+        var n16 = parseFloat(document.getElementById('n16').value);
+        var n17 = parseFloat(document.getElementById("n17").value);
+        var n18 = parseFloat(document.getElementById('n18').value);
+        var n19 = parseFloat(document.getElementById('n19').value);
+        var n20 = parseFloat(document.getElementById('n20').value);
+        soma = ((n1 * 12.75) + (n2 * 22.25) + (n3 * 22.00) + (n4 * 19.75) 
+                + (n5 * 11.75) + (n6 * 14.75) + (n7 * 8) + (n8 * 17)
+                + (n9 * 20) + (n10 * 23.50) + (n11 * 18) + (n12 * 28)
+                + (n13 * 32) + (n14 * 23) + (n15 * 100) + (n16 * 75.27)
+                + (n17 * 5.25) + (n18 * 5.25) + (n19 * 6.75) + (n20 * 6.75));
+        document.getElementById("result").innerHTML = `Total: R$ ${soma.toFixed(2)}`;
+
+        if (n19 > 0) {
+          document.getElementById("compra20").innerHTML = "Cerveja Heineken Lata";         
+        }
+
+        if (n20 > 0) {
+          document.getElementById("compra20").innerHTML = "Cerveja Eisenbahn Lata";         
+        }
+      
+      }
+    </script>
+
+    <script src="./js/scriptCardTable.js"></script>
+  </body>
+</html>

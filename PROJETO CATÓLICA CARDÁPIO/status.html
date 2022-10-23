@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Status do seu Pedido</title>
+    <link rel="stylesheet" href="./css/status.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bar">
+        <div class="fill"></div>
+      </div>
+      <div class="barrastatus"><img src="./imagens/barra.png" /></div>
+
+      <div class="counter">0%</div>
+      <button>Acompanhar Pedido</button>
+    </div>
+
+    <div class="output">
+      <span class="fa fa-check"></span>
+      <div class="text">RECEBA !!!</div>
+    </div>
+
+    <script type="text/javascript">
+      let container = document.querySelector(".container");
+      let output = document.querySelector(".output");
+      let fill = document.querySelector(".fill");
+      let click = document.querySelector("button");
+
+      click.addEventListener("click", () => {
+        var a = 0;
+        var run = setInterval(frames, 100);
+        function frames() {
+          a = a + 1;
+          if (a == 101) {
+            clearInterval(run);
+            container.style.display = "none";
+            output.style.display = "block";
+          } else {
+            var counter = document.querySelector(".counter");
+            counter.textContent = a + "%";
+            fill.style.width = a + "%";
+          }
+        }
+      });
+    </script>
+
+    <!-- <script src="./js/scriptCardTable.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "bk-title-bold";
+  src: url("../fontes/FlameBold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bk-title";
+  src: url("../fontes/FlameRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bk-text";
+  src: url("../fontes/FlameSans.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-color: #f5f5f5;
+  --secound-bg-color: #ffffff;
+  --titulo-color: #c12a21;
+  --texto-color: #686868;
+  --main-color: #c12a21;
+  --big-font: 5.3rem;
+  --h2-font: 4.2rem;
+  --p-font: 1.1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "bk-text";
+}
+
+body {
+  /* height: 100vh;
+  width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-color);
+}
+
+.produto {
+  width: 300px;
+  border-collapse: collapse;
+  border-radius: 22px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+td {
+  padding: 10px;
+}
+
+#imagem {
+  text-align: center;
+}
+
+#img {
+  width: 300px;
+}
+
+#titulo {
+  font-family: "bk-title";
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--main-color);
+  text-align: center;
+}
+
+#desc {
+  font-family: "bk-text";
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+}
+
+#preco {
+  text-align: center;
+  background-color: var(--main-color);
+}
+
+#result {
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+  font-family: "bk-text";
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  background-color: var(--main-color);
+}
+
+#troco {
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  border: 2px solid var(--main-color);
+  border-radius: 30px;
+}
+
+#botao {
+  align-items: center;
+}
+
+#sacola {
+  width: 17px;
+  align-content: center;
+}
+
+#valor {
+  font-family: "bk-text";
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+}
+
+
+.sacola {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sacola span {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+.sacola span.num {
+  font-size: 2rem;
+  pointer-events: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.bloco {
+  float: left;
+  width: 96%;
+  /* height: 300px; */
+  margin-left: 19%;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 769px) {
+  .bloco {
+    float: left;
+    width: 300px;
+    height: 505px;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+  }
+}
+
+input {
+  outline: unset;
+  border: 0px;
+  text-align: center;
+  height: 50px;
+  font-size: 25px;
+  background-color: var(--bg-color);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  color: var(--texto-color);
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -38px
+    top no-repeat;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -57px
+    top no-repeat;
+}
+
+
+.botao {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#link {
+  font-family: "bk-title";
+  font-size: 2rem;
+  font-weight: normal;
+  color: var(--main-color);
+  text-align: center;
+
+}
+
+/* Fim CSS botão do Carrinho */
